@@ -1,0 +1,34 @@
+{
+  "name": "WordPress Development Environment",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "wordpress",
+  "workspaceFolder": "/var/www/html",
+  "forwardPorts": [
+    8080
+  ],
+  "portsAttributes": {
+    "8080": {
+      "label": "WordPress Site",
+      "onAutoForward": "notify"
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "ms-azuretools.vscode-docker",
+        "wordpresstoolbox.wordpress-toolbox"
+      ],
+      "settings": {
+        "php.validate.executablePath": "/usr/local/bin/php"
+      }
+    }
+  },
+  "postCreateCommand": "chown -R www-data:www-data /var/www/html",
+  "remoteUser": "www-data"
+}

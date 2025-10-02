@@ -1,0 +1,78 @@
+# WordPress Core
+/wordpress/
+wp-admin/
+wp-includes/
+wp-*.php
+xmlrpc.php
+license.txt
+readme.html
+
+# WordPress Config
+wp-config.php
+wp-config-sample.php
+
+# WordPress Content - 必要に応じてコメントアウト
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/backups/
+
+# WordPress Plugins - カスタムプラグインのみをコミットする場合
+# wp-content/plugins/*
+# !wp-content/plugins/your-custom-plugin/
+
+# WordPress Themes - カスタムテーマのみをコミットする場合
+# wp-content/themes/*
+# !wp-content/themes/your-custom-theme/
+
+# Docker & DevContainer
+.env
+.env.local
+docker-compose.override.yml
+
+# データベース
+*.sql
+*.sql.gz
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+vendor/
+bower_components/
+
+# Build files
+/dist
+/build
+*.min.css
+*.min.js
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Security
+.htpasswd
+.htaccess.backup
