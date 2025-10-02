@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   nginx:
     image: nginx:latest
@@ -15,7 +13,7 @@ services:
       - wordpress_network
 
   wordpress:
-    image: wordpress:latest
+    image: wordpress:fpm
     container_name: wordpress_app
     environment:
       WORDPRESS_DB_HOST: mariadb:3306

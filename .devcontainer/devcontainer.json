@@ -12,11 +12,6 @@
       "onAutoForward": "notify"
     }
   },
-  "features": {
-    "ghcr.io/devcontainers/features/git:1": {
-      "version": "latest"
-    }
-  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -30,5 +25,8 @@
     }
   },
   "postCreateCommand": "chown -R www-data:www-data /var/www/html",
-  "remoteUser": "www-data"
+  "remoteUser": "root",
+  "containerEnv": {
+    "HOME": "/root"
+  }
 }
