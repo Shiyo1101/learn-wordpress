@@ -13,28 +13,22 @@ Nginx + WordPress + MariaDB を使用した Docker ベースの WordPress 開発
 ### 1. リポジトリのクローン
 
 ```bash
-git clone <your-repository-url>
-cd <project-directory>
+git clone https://github.com/Shiyo1101/learn-wordpress.git
+cd learn-wordpress
 ```
 
-### 2. 必要なディレクトリの作成
-
-```bash
-mkdir -p nginx
-```
-
-### 3. VS Code で Dev Container を起動
+### 2. VS Code で Dev Container を起動
 
 1. VS Code でプロジェクトフォルダを開く
 2. コマンドパレットを開く（`Ctrl+Shift+P` / `Cmd+Shift+P`）
 3. 「Dev Containers: Reopen in Container」を選択
 4. 初回起動時はイメージのダウンロードとビルドに数分かかります
 
-### 4. WordPress にアクセス
+### 3. WordPress にアクセス
 
 ブラウザで以下の URL を開きます：
 
-```
+```bash
 http://localhost:8080
 ```
 
